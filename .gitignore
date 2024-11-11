@@ -1,0 +1,5 @@
+includes
+ROM
+docs
+*.o
+src/*.o
