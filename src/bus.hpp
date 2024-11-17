@@ -1,8 +1,8 @@
-#ifndef BUS_H
-#define BUS_H
+#ifndef BUS_HPP
+#define BUS_HPP
 //NES BUS
-#include "6507.h"
-#include "cartridge.h"
+#include "6507.hpp"
+#include "cartridge.hpp"
 
 class CPU;
 class Cartridge;

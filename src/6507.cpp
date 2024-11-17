@@ -1,4 +1,4 @@
-#include "6507.h"
+#include "6507.hpp"
 #include <cstdio>
 #include <cstdlib>
 
@@ -782,9 +782,7 @@ void CPU::nextInstruction(){
     invoke(instructions[opcode].address_mode, *this);
     invoke(instructions[opcode].instruction, *this);
     total_cycles += instructions[opcode].cycles;
-    if(S < 0x80) s += 0x80;
-    else if(S > 0xFF) s -= 0x80;
-    // printState();
+    printState();
 }
 
 void CPU::powerON(){

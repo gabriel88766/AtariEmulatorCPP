@@ -3,3 +3,4 @@ ROM
 docs
 *.o
 src/*.o
+obj

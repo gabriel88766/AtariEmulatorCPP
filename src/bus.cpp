@@ -1,4 +1,4 @@
-#include "bus.h"
+#include "bus.hpp"
 #include <fstream>
 #include <cstring>
 
@@ -17,7 +17,7 @@ unsigned char Bus::readAddress(unsigned short address){
     address &= 0x1FFF; //13 pins
     if(address >= 0x1000){
         //cartridge area
-        address &= 0xFFF
+        address &= 0xFFF;
         return cartridge->readMemory(address);
     }else{
         address &= 0x3FF;
@@ -49,7 +49,7 @@ void Bus::writeAddress(unsigned short address, unsigned char value){
     address &= 0x1FFF; //13 pins
     if(address >= 0x1000){
         //cartridge area
-        address &= 0xFFF
+        address &= 0xFFF;
         cartridge->readMemory(address);
     }else{
         address &= 0x3FF;

@@ -1,10 +1,8 @@
-#include "cartridge.h"
+#include "cartridge.hpp"
 #include <fstream>
 
 Cartridge::~Cartridge(){
-    delete[] header;
-    delete[] prg_rom;
-    delete[] chr_rom;
+    delete[] rom;
 }
 
 void Cartridge::connectBus(Bus *bus){

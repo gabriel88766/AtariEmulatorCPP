@@ -1,7 +1,7 @@
-#ifndef CPU6502_H
-#define CPU6502_H
+#ifndef CPU6502_HPP
+#define CPU6502_HPP
 
-#include "bus.h"
+#include "bus.hpp"
 
 class Bus;
 

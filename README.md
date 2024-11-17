@@ -3,7 +3,7 @@
 Good project to learn how a computer works and how to translate old hardware to new hardwares.\
 
 This emulator is not playable yet, but it will use a 6502 code previously written for a NES Emulator, so It should be ready soon.\
-I will develop this for Linux and then make it cross-platform.
+I will develop this for Windows and then make it cross-platform.
 
 # Description - How to 
 

@@ -1,18 +1,21 @@
-#ifndef CARTRIDGE_H
-#define CARTRIDGE_H
+#ifndef TIA_HPP
+#define TIA_HPP
 
-#include "bus.h"
+#include "bus.hpp"
 
 class Bus;
 
-class Cartridge{
+class Color{
+public:
+    unsigned char R, G, B;
+};
+
+class Tia{
 private:
     Bus *bus;
-    unsigned char *rom;
 public:
-    ~Cartridge();
+    ~Tia();
     void connectBus(Bus *bus);
-    void read(const char *filename);
     unsigned char readMemory(unsigned short address);
     void writeMemory(unsigned short address, unsigned char value);
 };
